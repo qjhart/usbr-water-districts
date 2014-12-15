@@ -1,0 +1,10 @@
+<OGRVRTDataSource>
+ <OGRVRTWarpedLayer>
+  <OGRVRTLayer name="water_districts">
+    <SrcDataSource relativeToVRT="1">US_Bureau_Reclamation_water_districts_2012.shp</SrcDataSource>
+    <SrcLayer>US_Bureau_Reclamation_water_districts_2012</SrcLayer>
+    <Field name="water_district" src="WDNAME" type="STRING"/>
+  </OGRVRTLayer>
+<TargetSRS>epsg:3310</TargetSRS>
+</OGRVRTWarpedLayer>
+</OGRVRTDataSource>
