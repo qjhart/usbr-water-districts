@@ -1,10 +1,40 @@
 <OGRVRTDataSource>
  <OGRVRTWarpedLayer>
-  <OGRVRTLayer name="water_districts">
+  <OGRVRTLayer name="federal_water_districts">
     <SrcDataSource relativeToVRT="1">US_Bureau_Reclamation_water_districts_2012.shp</SrcDataSource>
     <SrcLayer>US_Bureau_Reclamation_water_districts_2012</SrcLayer>
-    <Field name="water_district" src="WDNAME" type="STRING"/>
+    <SrcSQL>SELECT WDNAME AS water_district, "federal" AS type FROM US_Bureau_Reclamation_water_districts_2012</SrcSQL>
   </OGRVRTLayer>
 <TargetSRS>epsg:3310</TargetSRS>
 </OGRVRTWarpedLayer>
+
+ <OGRVRTWarpedLayer>
+  <OGRVRTLayer name="state_water_districts">
+    <SrcDataSource relativeToVRT="1">wdst24.shp</SrcDataSource>
+    <SrcLayer>wdst24</SrcLayer>
+    <SrcSQL>SELECT WDNAME AS water_district, "state" AS type FROM wdst24</SrcSQL>
+  </OGRVRTLayer>
+<TargetSRS>epsg:3310</TargetSRS>
+</OGRVRTWarpedLayer>
+
+ <OGRVRTWarpedLayer>
+  <OGRVRTLayer name="private_water_districts">
+    <SrcDataSource relativeToVRT="1">wdpr24.shp</SrcDataSource>
+    <SrcLayer>wdpr24</SrcLayer>
+    <SrcSQL>SELECT WDNAME AS water_district, "private" AS type FROM wdpr24</SrcSQL>
+  </OGRVRTLayer>
+<TargetSRS>epsg:3310</TargetSRS>
+</OGRVRTWarpedLayer>
+
+<OGRVRTUnionLayer name="water_districts">
+        <OGRVRTLayer name="federal_water_districts">
+            <SrcDataSource relativeToVRT="1">water_districts.vrt</SrcDataSource>
+        </OGRVRTLayer>
+        <OGRVRTLayer name="private_water_districts">
+            <SrcDataSource relativeToVRT="1">water_districts.vrt</SrcDataSource>
+        </OGRVRTLayer>
+        <OGRVRTLayer name="state_water_districts">
+            <SrcDataSource relativeToVRT="1">water_districts.vrt</SrcDataSource>
+        </OGRVRTLayer>
+    </OGRVRTUnionLayer>
 </OGRVRTDataSource>
