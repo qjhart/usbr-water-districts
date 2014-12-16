@@ -1,15 +1,25 @@
-usbr-water-districts
-====================
+USBR Water Districts (usbr-water-districts)
+===========================================
 
-USBR defined Federal Water Districts
-13th Edition  Published August 31, 2010.  
+This represents a conflation of three datasets published by the US
+Bureau of Reclamation, describing various water districts for
+California.  These include:
 
-## ABSTRACT
+* _Federal_ 13th Edition  Published August 31, 2010.  
+* _State_ Published 2004 
+* _Private_ Published 2003
+
+Note that because of the source and age of the dataset(s) these
+records may no longer be an accurate representation of California's
+various water districts.
+
+
+## Description
 
 Federal Water Contract boundaries are incorporated boundaries of
 districts having contracts with the U.S. Bureau of Reclamation
 (Reclamation). These data are updated when sufficient number of
-changes have occured to warrant an update. Updates are determined by
+changes have occurred to warrant an update. Updates are determined by
 the needs of the local office and are composited from separate
 databases. Boundaries are updated as changes are identified by the
 Water Districts. The boundaries are not current for all Water
@@ -25,21 +35,40 @@ Office GIS center. This database represents the most current and
 accurate understanding of the boundary location and current name of
 the Water Districts.
 
-## PURPOSE
+Private Water District boundaries are areas where private contracts
+provide water to the district in California. This database is designed
+as a regions polygon database and is updated when sufficient number of
+changes have occured to warrant an update. Updates are determined by
+the needs of the local office. Separate databases are used for
+maintenance purposes. Boundaries are continually being updated as
+changes are identified by the Water Districts. The boundaries are not
+current for all Water Districts found in the database at the same time
+due to the update methods employed. There may be conflicts in the
+boundaries between districts due to the time of update and review
+process associated with each Water District. Other problems may be
+associated with Water District name changes that have not been updated
+and possibly new Water Districts not being included due to lack of
+information. This database represents the most current and accurate
+understanding of the boundary location and current name of the Water
+Districts.
 
-The Federal Water Contract boundaries database is cooperatively shared
-between the U.S. Bureau of Reclamation (Reclamation), Mid-Pacific
-regional office (MP), MPGIS Service Center and the California
-Department of Water Resources (DWR). The Reclamation maintains this
-database with the voluntary assistance of the Federal Water
-Contractors. This database is used by Reclamation for various purposes
-including, but not limited to, contracting, operational, and
-maintenance purposes. This database is not intended to be used as a
-land survey or representation of land for conveyance or tax
-purposes. The database is available to all users that may require this
-information.
-
-## Process 
+State Water Project District boundaries are areas where state
+contracts provide water to the district in California. This database
+is designed as a regions polygon database and is updated when
+sufficient number of changes have occured to warrant an
+update. Updates are determined by the needs of the local
+office. Separate databases are used for maintenance
+purposes. Boundaries are continually being updated as changes are
+identified by the Water Districts. The boundaries are not current for
+all Water Districts found in the database at the same time due to the
+update methods employed. There may be conflicts in the boundaries
+between districts due to the time of update and review process
+associated with each Water District. Other problems may be associated
+with Water District name changes that have not been updated and
+possibly new Water Districts not being included due to lack of
+information. This database represents the most current and accurate
+understanding of the boundary location and current name of the Water
+Districts.
 
 The USBR provides maps at 1:24,000-scale to the various Water
 Districts for review. Boundary corrections are marked on the map
